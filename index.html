@@ -1,8 +1,23 @@
-<title>Ovanta — Acceso a tecnología de alto valor</title>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marenta — Renting de activos productivos de alto valor</title>
+<meta name="description" content="Marenta financia, instala y mantiene equipos productivos de alto valor para que empresas, IPS y especialistas accedan sin inmovilizar capital, pagando un canon mensual. Para fabricantes y distribuidores, convertimos ventas de alto desembolso en arriendo operativo.">
+<meta name="theme-color" content="#16323A">
+<meta property="og:title" content="Marenta — Renting de activos productivos">
+<meta property="og:description" content="Accede a tecnología de alto valor sin capex. Un modelo, dos formas de ganar: clientes que rentan y aliados que venden vía arriendo operativo.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Cg%20fill='none'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='13'%3E%3Cpath%20d='M8%2084%20L28%2014'%20stroke='%23147C86'/%3E%3Cpath%20d='M72%2014%20L92%2084'%20stroke='%23147C86'/%3E%3Cpath%20d='M28%2014%20L50%2054%20L72%2014'%20stroke='%23B0842B'/%3E%3C/g%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Marenta","description":"Renting de activos productivos de alto valor. Marenta financia, instala y mantiene el equipo para que el cliente pague un canon mensual; y facilita a fabricantes y distribuidores la venta de activos de alto desembolso mediante arriendo operativo.","areaServed":"CO","email":"comercial@marenta.co","knowsAbout":["Renting operativo","Arriendo operativo","Cámara hiperbárica de grado médico","Financiación de equipos productivos"]}
+</script>
 <style>
 :root{
   --bg:#F3F1EB; --surface:#FCFBF7; --panel:#E9EDEE; --ink:#16323A; --ink-2:#0f2429;
-  --muted:#5f6f6e; --teal:#12707A; --teal-d:#0d565d; --gold:#a97e22;
+  --muted:#5f6f6e; --teal:#147C86; --teal-d:#0d565d; --gold:#B0842B;
   --line:#e3ded2; --ring:#16323A; --shadow:0 18px 44px rgba(22,50,58,.09);
 }
 @media (prefers-color-scheme:dark){:root{
@@ -10,7 +25,7 @@
   --muted:#9db0af; --teal:#5bb8c2; --teal-d:#8fd3da; --gold:#d3a54c;
   --line:#284048; --ring:#EEE7D8; --shadow:0 18px 44px rgba(0,0,0,.42);
 }}
-:root[data-theme="light"]{--bg:#F3F1EB;--surface:#FCFBF7;--panel:#E9EDEE;--ink:#16323A;--ink-2:#0f2429;--muted:#5f6f6e;--teal:#12707A;--teal-d:#0d565d;--gold:#a97e22;--line:#e3ded2;--ring:#16323A;--shadow:0 18px 44px rgba(22,50,58,.09)}
+:root[data-theme="light"]{--bg:#F3F1EB;--surface:#FCFBF7;--panel:#E9EDEE;--ink:#16323A;--ink-2:#0f2429;--muted:#5f6f6e;--teal:#147C86;--teal-d:#0d565d;--gold:#B0842B;--line:#e3ded2;--ring:#16323A;--shadow:0 18px 44px rgba(22,50,58,.09)}
 :root[data-theme="dark"]{--bg:#0f2128;--surface:#153039;--panel:#193741;--ink:#EEE7D8;--ink-2:#f4eee1;--muted:#9db0af;--teal:#5bb8c2;--teal-d:#8fd3da;--gold:#d3a54c;--line:#284048;--ring:#EEE7D8;--shadow:0 18px 44px rgba(0,0,0,.42)}
 
 *{box-sizing:border-box}
@@ -30,11 +45,12 @@ p{margin:0 0 1em;max-width:64ch}a{color:var(--teal);text-decoration:none}
 .btn.ghost:hover{background:var(--ink);color:var(--surface)}
 :focus-visible{outline:2px solid var(--teal);outline-offset:3px}
 .rings{display:block}.rings circle{fill:none;stroke:var(--ring);stroke-width:1.4}
+.mark{flex:none}.mark path{fill:none;stroke-linecap:round;stroke-linejoin:round}
 
 header.site{position:sticky;top:0;z-index:100;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;justify-content:space-between;height:74px;gap:16px}
-.brand{display:flex;align-items:center;gap:12px;font-size:1.15rem;font-weight:700;letter-spacing:.32em;color:var(--ink);text-transform:uppercase}
-.brand svg{width:26px;height:26px;flex:none}
+.brand{display:flex;align-items:center;gap:11px;font-size:1.15rem;font-weight:700;letter-spacing:.3em;color:var(--ink);text-transform:uppercase}
+.brand .mark{width:30px;height:30px}
 .mainnav{display:none;align-items:center;gap:2px}
 .mainnav>a,.navitem>button{font:inherit;font-size:.9rem;font-weight:500;letter-spacing:.01em;color:var(--ink);background:none;border:none;cursor:pointer;padding:10px 15px;border-radius:2px;display:inline-flex;align-items:center;gap:6px}
 .mainnav>a:hover,.navitem>button:hover{color:var(--teal)}
@@ -68,7 +84,7 @@ header.site{position:sticky;top:0;z-index:100;background:color-mix(in srgb,var(-
 .hero .left{display:flex;flex-direction:column;justify-content:center;padding:40px 0}
 @media(min-width:940px){.hero .left{padding:60px 60px 60px 0}}
 .hero h1{margin-bottom:.3em}
-.hero .lead{max-width:44ch;font-size:1.24rem}
+.hero .lead{max-width:46ch;font-size:1.24rem}
 .hero .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
 .hero .right{position:relative;background:var(--panel);border-radius:6px;min-height:440px;overflow:hidden;display:grid;place-items:center;padding:30px}
 .hero .right .bigrings{position:absolute;right:-60px;bottom:-60px;width:360px;opacity:.5}
@@ -109,6 +125,7 @@ ul.check li::before{content:"";position:absolute;left:2px;top:16px;width:15px;he
 @media(min-width:760px){.steps.s4{grid-template-columns:repeat(4,1fr)}}
 .step{padding:28px 26px 26px;border-top:2px solid var(--ink)}
 .step .n{font-size:.8rem;font-weight:700;letter-spacing:2px;color:var(--teal);margin-bottom:14px}
+.sec-ink .step .n{color:var(--gold)}
 .twrap{overflow-x:auto;margin-top:12px;border:1px solid var(--line);border-radius:5px}
 table{width:100%;border-collapse:collapse;font-size:.93rem;min-width:440px}
 th,td{text-align:left;padding:15px 18px;border-bottom:1px solid var(--line)}
@@ -157,13 +174,15 @@ footer a:hover{color:#EDE7D9}
 .fbottom{border-top:1px solid #2a4149;margin-top:48px;padding-top:24px;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;font-size:.8rem;color:#7d918e}
 .fbottom .links{display:flex;gap:20px}.fbottom .links a{display:inline}
 </style>
+</head>
+<body>
 
 <a class="skip" href="#main">Saltar al contenido</a>
 
 <header class="site">
   <div class="wrap bar">
-    <a class="brand" href="#inicio" aria-label="Ovanta, inicio">
-      <svg viewBox="0 0 44 26" class="rings" aria-hidden="true"><circle cx="13" cy="13" r="11"/><circle cx="22" cy="13" r="11"/><circle cx="31" cy="13" r="11"/></svg>Ovanta
+    <a class="brand" href="#inicio" aria-label="Marenta, inicio">
+      <svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><path d="M8 84 L28 14" stroke="var(--teal)" stroke-width="13"/><path d="M72 14 L92 84" stroke="var(--teal)" stroke-width="13"/><path d="M28 14 L50 54 L72 14" stroke="var(--gold)" stroke-width="13"/></svg>Marenta
     </a>
     <nav class="mainnav" aria-label="Principal">
       <a href="#inicio">Inicio</a>
@@ -176,9 +195,10 @@ footer a:hover{color:#EDE7D9}
           <a href="#lineas" class="soon" role="menuitem"><b>Seguridad</b><small>CCTV y control de acceso</small></a>
         </div>
       </div>
+      <a href="#publicos">Clientes</a>
+      <a href="#aliados">Aliados</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#numeros">El modelo</a>
-      <a href="#faq">Preguntas</a>
       <a href="#contacto">Contacto</a>
     </nav>
     <div class="tools">
@@ -195,7 +215,7 @@ footer a:hover{color:#EDE7D9}
 
 <div class="drawer" id="drawer" aria-hidden="true">
   <div class="top">
-    <span class="brand"><svg viewBox="0 0 44 26" class="rings" aria-hidden="true"><circle cx="13" cy="13" r="11"/><circle cx="22" cy="13" r="11"/><circle cx="31" cy="13" r="11"/></svg>Ovanta</span>
+    <span class="brand"><svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><path d="M8 84 L28 14" stroke="var(--teal)" stroke-width="13"/><path d="M72 14 L92 84" stroke="var(--teal)" stroke-width="13"/><path d="M28 14 L50 54 L72 14" stroke="var(--gold)" stroke-width="13"/></svg>Marenta</span>
     <button class="icbtn" id="closeDrawer" aria-label="Cerrar menú"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg></button>
   </div>
   <nav aria-label="Móvil">
@@ -204,9 +224,10 @@ footer a:hover{color:#EDE7D9}
     <a class="sub" href="#amedida">— Renting a tu medida</a>
     <a class="sub" href="#camara">— Salud · Cámara hiperbárica</a>
     <a class="sub" href="#lineas">— Agroindustria y seguridad</a>
+    <a href="#publicos">Clientes</a>
+    <a href="#aliados">Aliados</a>
     <a href="#nosotros">Nosotros</a>
     <a href="#numeros">El modelo</a>
-    <a href="#faq">Preguntas</a>
     <a href="#contacto">Contacto</a>
     <a class="btn" href="#contacto">Agenda una consulta</a>
   </nav>
@@ -219,10 +240,10 @@ footer a:hover{color:#EDE7D9}
     <div class="left">
       <div class="eyebrow">Renting de activos productivos · Multisegmento</div>
       <h1>Acceso a tecnología de alto valor.</h1>
-      <p class="lead">Tu empresa o tu práctica accede al equipo que necesita —de cualquier sector— sin inmovilizar capital. Nosotros lo financiamos, instalamos y mantenemos; tú pagas un canon mensual y el activo se paga con su propia operación.</p>
+      <p class="lead">Marenta pone el capital y la operación en el medio: quien necesita un equipo de alto valor accede a él sin inmovilizar capital, y quien lo fabrica o vende cierra la venta convirtiéndola en un canon mensual.</p>
       <div class="actions">
         <a class="btn" href="#contacto">Agenda una consulta</a>
-        <a class="btn ghost" href="#amedida">Cómo funciona</a>
+        <a class="btn ghost" href="#publicos">Cómo funciona</a>
       </div>
       <div class="datachips">
         <div><b>$0</b><span>capex inicial</span></div>
@@ -241,7 +262,7 @@ footer a:hover{color:#EDE7D9}
         <circle cx="150" cy="176" r="15" fill="#16323A" opacity=".8"/>
         <path d="M165 183 q80 -22 165 -6 q6 1 6 8 q0 8 -7 8 q-90 -6 -164 6 z" fill="#16323A" opacity=".65"/>
         <rect x="20" y="122" width="58" height="110" rx="8" fill="#16323A"/>
-        <circle cx="49" cy="152" r="16" fill="#0c1e24" stroke="#5bb8c2" stroke-width="1.6"/><path d="M49 152 L59 145" stroke="#a97e22" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="49" cy="152" r="16" fill="#0c1e24" stroke="#5bb8c2" stroke-width="1.6"/><path d="M49 152 L59 145" stroke="#B0842B" stroke-width="2.4" stroke-linecap="round"/>
         <rect x="35" y="180" width="28" height="5" rx="2.5" fill="#5bb8c2"/><rect x="35" y="192" width="28" height="5" rx="2.5" fill="#5bb8c2" opacity=".5"/>
         <rect x="452" y="152" width="26" height="84" rx="13" fill="#E6EAEB" stroke="#16323A" stroke-width="2.4"/>
         <text x="465" y="200" font-size="13" fill="#16323A" text-anchor="middle" font-weight="bold">O₂</text>
@@ -252,13 +273,48 @@ footer a:hover{color:#EDE7D9}
   </div>
 </section>
 
-<!-- A TU MEDIDA (multisegmento) -->
+<!-- DOS PÚBLICOS: CLIENTES / ALIADOS -->
+<section id="publicos" class="sec-cream">
+  <div class="wrap">
+    <div class="sechead">
+      <div class="eyebrow">Cómo trabajamos</div>
+      <h2>Un modelo, dos formas de ganar</h2>
+      <p class="lead">Marenta conecta a quien necesita un equipo de alto valor con quien lo fabrica o distribuye, y se pone en el medio con el capital, la instalación y el soporte.</p>
+    </div>
+    <div class="grid g2">
+      <div class="card">
+        <span class="tag">Para clientes</span>
+        <h3>Usas y rentas el equipo</h3>
+        <p>Empresas, IPS, especialistas, fincas o copropiedades que necesitan tecnología productiva. Accedes sin inmovilizar capital: financiamos, instalamos y mantenemos; tú pagas un canon y el activo se paga con su propia operación.</p>
+        <ul class="check">
+          <li>Sin capex inicial</li>
+          <li>Instalación, soporte, mantenimiento y seguros incluidos</li>
+          <li>Cualquier activo, cualquier sector</li>
+        </ul>
+        <p style="margin-top:20px"><a href="#amedida">Ver cómo funciona para clientes →</a></p>
+      </div>
+      <div class="card feature">
+        <span class="tag">Para aliados</span>
+        <h3>Fabricas o vendes el equipo</h3>
+        <p>¿Tu producto es un activo de alto desembolso y el precio frena la venta? Marenta entra en el medio: compramos tu equipo y lo ponemos en arriendo operativo para tu cliente. Tú cierras la venta hoy; el cliente paga un canon cómodo.</p>
+        <ul class="check">
+          <li>Cierras ventas que el precio bloqueaba</li>
+          <li>Cobras de contado, sin riesgo de cartera</li>
+          <li>Marenta gestiona financiación, entrega y postventa</li>
+        </ul>
+        <p style="margin-top:20px"><a href="#aliados" style="color:#8fd3da">Ver la propuesta para aliados →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- A TU MEDIDA (clientes, multisegmento) -->
 <section id="amedida">
   <div class="wrap">
     <div class="sechead">
-      <div class="eyebrow">El modelo Ovanta</div>
+      <div class="eyebrow">El modelo Marenta · Clientes</div>
       <h2>Cualquier activo. Cualquier sector.</h2>
-      <p class="lead">Ovanta no se limita a un solo producto. Si tu empresa o tu práctica —del sector que sea— necesita un equipo productivo de alto valor, tú nos dices cuál y nosotros nos encargamos de todo lo demás.</p>
+      <p class="lead">Marenta no se limita a un solo producto. Si tu empresa o tu práctica —del sector que sea— necesita un equipo productivo de alto valor, tú nos dices cuál y nosotros nos encargamos de todo lo demás.</p>
     </div>
     <div class="steps s4">
       <div class="step"><div class="n">01</div><h3>Nos dices qué necesitas</h3><p>Cuéntanos qué activo requiere tu operación y qué resultado esperas de él.</p></div>
@@ -301,6 +357,21 @@ footer a:hover{color:#EDE7D9}
   </div>
 </section>
 
+<!-- ALIADOS -->
+<section id="aliados" class="sec-ink">
+  <div class="wrap">
+    <div class="eyebrow">Para fabricantes y distribuidores</div>
+    <h2 style="max-width:22ch">Convierte una venta difícil en un canon mensual</h2>
+    <p class="lead" style="max-width:60ch">Cuando tu equipo cuesta demasiado para un desembolso de contado, la venta se estanca. Marenta se pone en el medio, compra el activo y lo entrega a tu cliente en arriendo operativo. Tú vendes; nosotros financiamos y acompañamos.</p>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h3>Presentas tu equipo</h3><p>Nos compartes el activo y el cliente interesado que no quiere —o no puede— comprarlo de contado.</p></div>
+      <div class="step"><div class="n">02</div><h3>Marenta lo adquiere</h3><p>Compramos tu equipo de contado. Tú cierras la venta y cobras sin asumir riesgo de cartera.</p></div>
+      <div class="step"><div class="n">03</div><h3>Tu cliente lo renta</h3><p>El cliente accede por un canon mensual. Nosotros gestionamos financiación, instalación y postventa.</p></div>
+    </div>
+    <a class="btn" href="#contacto" style="margin-top:38px;background:#EDE7D9;color:var(--ink-2)">Ser aliado de Marenta</a>
+  </div>
+</section>
+
 <!-- CÁMARA (caso destacado) -->
 <section id="camara">
   <div class="wrap">
@@ -325,7 +396,7 @@ footer a:hover{color:#EDE7D9}
           <circle cx="150" cy="165" r="15" fill="#16323A" opacity=".8"/>
           <path d="M165 172 q80 -22 165 -6 q6 1 6 8 q0 8 -7 8 q-90 -6 -164 6 z" fill="#16323A" opacity=".6"/>
           <rect x="20" y="114" width="58" height="110" rx="8" fill="#16323A"/>
-          <circle cx="49" cy="144" r="16" fill="#0c1e24" stroke="#5bb8c2" stroke-width="1.6"/><path d="M49 144 L59 137" stroke="#a97e22" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="49" cy="144" r="16" fill="#0c1e24" stroke="#5bb8c2" stroke-width="1.6"/><path d="M49 144 L59 137" stroke="#B0842B" stroke-width="2.4" stroke-linecap="round"/>
           <rect x="452" y="144" width="26" height="84" rx="13" fill="#E6EAEB" stroke="#16323A" stroke-width="2.4"/>
           <text x="465" y="192" font-size="13" fill="#16323A" text-anchor="middle" font-weight="bold">O₂</text>
         </svg>
@@ -349,7 +420,7 @@ footer a:hover{color:#EDE7D9}
     <h3 style="margin-top:48px">Grado médico, no cámara de "bienestar"</h3>
     <div class="twrap">
       <table>
-        <thead><tr><th></th><th>Grado médico (Ovanta)</th><th>Cámara blanda</th></tr></thead>
+        <thead><tr><th></th><th>Grado médico (Marenta)</th><th>Cámara blanda</th></tr></thead>
         <tbody>
           <tr><td>Cámara</td><td>Rígida, acrílico PVHO-1</td><td>Blanda / inflable</td></tr>
           <tr><td>Presión</td><td>2.0–2.5 ATA</td><td>~1.3 ATA</td></tr>
@@ -404,8 +475,8 @@ footer a:hover{color:#EDE7D9}
     <div>
       <div class="eyebrow">Nosotros</div>
       <h2>El capital no debería ser el límite</h2>
-      <p>Ovanta nace para resolver un problema concreto: acceder a equipos productivos de alto valor sin fondear el capex desde el momento cero. En vez de comprar, alquilas el equipo mediante renting y lo pagas con lo que ese mismo equipo produce.</p>
-      <p>Empezamos por la salud porque es donde el modelo genera más valor hoy, pero está pensado para cualquier sector: un especialista, una IPS, una finca, una copropiedad o una empresa pueden acceder a la tecnología que necesitan sin descapitalizarse.</p>
+      <p>Marenta nace para resolver un problema concreto: acceder a equipos productivos de alto valor sin fondear el capex desde el momento cero. En vez de comprar, alquilas el equipo mediante renting y lo pagas con lo que ese mismo equipo produce.</p>
+      <p>Empezamos por la salud porque es donde el modelo genera más valor hoy, pero está pensado para cualquier sector: un especialista, una IPS, una finca, una copropiedad o una empresa pueden acceder a la tecnología que necesitan sin descapitalizarse. Y para los fabricantes, somos el puente que convierte una venta grande en un canon accesible.</p>
     </div>
     <div class="clinical">
       <svg class="bigrings rings" viewBox="0 0 120 44" aria-hidden="true"><circle cx="22" cy="22" r="20"/><circle cx="60" cy="22" r="20"/><circle cx="98" cy="22" r="20"/></svg>
@@ -419,11 +490,11 @@ footer a:hover{color:#EDE7D9}
     <div class="eyebrow">Preguntas frecuentes</div>
     <h2>Lo que necesitas saber</h2>
     <div class="faq" style="margin-top:26px;max-width:840px">
-      <details open><summary>¿Cómo funciona el renting de Ovanta?</summary><p>Accedes al equipo por un canon mensual fijo que incluye instalación, soporte, mantenimiento, capacitación y seguros. No inmovilizas capital: el equipo se paga con su propia operación. El contrato es a 3 años, asegurado anualmente.</p></details>
+      <details open><summary>¿Cómo funciona el renting de Marenta?</summary><p>Accedes al equipo por un canon mensual fijo que incluye instalación, soporte, mantenimiento, capacitación y seguros. No inmovilizas capital: el equipo se paga con su propia operación. El contrato es a 3 años, asegurado anualmente.</p></details>
+      <details><summary>Soy fabricante o distribuidor, ¿qué gano con Marenta?</summary><p>Cuando el precio de tu equipo frena la venta, Marenta lo compra de contado y lo entrega a tu cliente en arriendo operativo. Tú cierras la venta y cobras sin riesgo de cartera; nosotros asumimos la financiación, la entrega y la postventa. Convertimos un desembolso grande en un canon accesible para tu cliente.</p></details>
       <details><summary>¿Solo trabajan con cámaras hiperbáricas?</summary><p>No. El modelo aplica a cualquier activo productivo de alto valor, de cualquier sector. La cámara hiperbárica es hoy nuestra línea más avanzada, pero si tu empresa o tu práctica necesita otro equipo, nos dices cuál y nos encargamos de financiarlo, instalarlo y mantenerlo bajo el mismo modelo.</p></details>
       <details><summary>¿Qué pasa si no alcanzo el volumen esperado?</summary><p>El punto de equilibrio se alcanza con poca operación. Antes de firmar, modelamos juntos tus números reales con supuestos honestos de ingresos, costos y capacidad.</p></details>
       <details><summary>¿Necesito habilitación para prestar el servicio de salud?</summary><p>Para la línea de salud, sí. La oxigenoterapia hiperbárica es un servicio de salud que se habilita en el REPS bajo la Resolución 3100 de 2019, normalmente como IPS, con equipo registrado ante INVIMA y oxígeno medicinal registrado. Te acompañamos con la documentación técnica.</p></details>
-      <details><summary>¿La cámara es de grado médico?</summary><p>Sí. Cámara rígida con acrílico certificado PVHO-1, operada a 2.0–2.5 ATA. Es una intervención distinta de las cámaras blandas de "bienestar" a baja presión.</p></details>
     </div>
   </div>
 </section>
@@ -432,8 +503,8 @@ footer a:hover{color:#EDE7D9}
   <div class="wrap contact-grid">
     <div>
       <div class="eyebrow">Hablemos</div>
-      <h2>Cuéntanos qué activo necesitas</h2>
-      <p class="lead">Del sector que sea. Te preparamos una propuesta con números a tu medida.</p>
+      <h2>Cuéntanos qué necesitas</h2>
+      <p class="lead">Seas cliente o aliado, del sector que sea. Te preparamos una propuesta con números a tu medida.</p>
       <form onsubmit="event.preventDefault();this.querySelector('.ok').style.display='block';this.reset();">
         <div class="frow">
           <div><label for="n">Nombre y apellido</label><input id="n" required></div>
@@ -441,10 +512,10 @@ footer a:hover{color:#EDE7D9}
         </div>
         <div class="frow">
           <div><label for="t">Teléfono / WhatsApp</label><input id="t" type="tel"></div>
-          <div><label for="p">Sector / perfil</label><select id="p"><option>Salud · IPS</option><option>Salud · especialista</option><option>Agroindustria</option><option>Seguridad / copropiedad</option><option>Otro sector</option></select></div>
+          <div><label for="p">Perfil</label><select id="p"><option>Cliente · Salud (IPS)</option><option>Cliente · Salud (especialista)</option><option>Cliente · Agroindustria</option><option>Cliente · Seguridad / copropiedad</option><option>Cliente · Otro sector</option><option>Aliado · Fabricante o distribuidor</option></select></div>
         </div>
-        <div><label for="m">¿Qué activo necesitas?</label><textarea id="m" placeholder="Cuéntanos qué equipo requieres y qué resultado esperas de él"></textarea></div>
-        <label class="consent"><input type="checkbox" required> Autorizo el tratamiento de mis datos conforme a la Política de Tratamiento de Datos de Ovanta.</label>
+        <div><label for="m">Cuéntanos tu caso</label><textarea id="m" placeholder="Si eres cliente, qué activo necesitas y qué resultado esperas. Si eres aliado, qué equipo vendes y a qué cliente."></textarea></div>
+        <label class="consent"><input type="checkbox" required> Autorizo el tratamiento de mis datos conforme a la Política de Tratamiento de Datos de Marenta.</label>
         <button class="btn" type="submit">Enviar consulta</button>
         <p class="ok note" style="display:none;color:var(--teal);font-weight:600">✓ ¡Gracias! Recibimos tu mensaje. (Demostración.)</p>
       </form>
@@ -452,7 +523,7 @@ footer a:hover{color:#EDE7D9}
     <div>
       <div class="card">
         <h3>Datos de contacto</h3>
-        <p style="margin-bottom:10px"><strong>Correo</strong><br>comercial@ovanta.co</p>
+        <p style="margin-bottom:10px"><strong>Correo</strong><br>comercial@marenta.co</p>
         <p style="margin-bottom:10px"><strong>WhatsApp</strong><br>+57 300 123 4567</p>
         <p style="margin-bottom:10px"><strong>Ubicación</strong><br>Medellín, Colombia</p>
         <p style="margin:0"><strong>Horario</strong><br>Lun–Vie · 8:00–18:00</p>
@@ -480,9 +551,9 @@ footer a:hover{color:#EDE7D9}
     <h2>Política de Tratamiento de Datos</h2>
     <p class="lead" style="margin-bottom:8px">Conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013 (Colombia). Última actualización: [fecha]. Documento base a validar por el área legal.</p>
     <div class="faq" style="margin-top:14px">
-      <details><summary>Responsable del tratamiento</summary><p>Ovanta S.A.S., NIT [pendiente], domicilio en Medellín, Colombia. Contacto para datos: datos@ovanta.co · +57 300 123 4567.</p></details>
+      <details><summary>Responsable del tratamiento</summary><p>Marenta S.A.S., NIT [pendiente], domicilio en Medellín, Colombia. Contacto para datos: datos@marenta.co · +57 300 123 4567.</p></details>
       <details><summary>Datos que recolectamos y finalidades</summary><p>Recolectamos datos de identificación y contacto que nos proporciones voluntariamente (nombre, correo, teléfono, ciudad, perfil, institución, mensaje). Finalidades: atender solicitudes y cotizaciones, elaborar propuestas, gestionar la relación de servicio, enviar comunicaciones cuando lo autorices y cumplir obligaciones legales. No recolectamos datos sensibles por este sitio; no incluyas información clínica de pacientes.</p></details>
-      <details><summary>Tus derechos (Habeas Data)</summary><p>Puedes conocer, actualizar y rectificar tus datos; solicitar prueba de la autorización; ser informado del uso; presentar quejas ante la SIC; y revocar la autorización o solicitar la supresión cuando no exista deber legal o contractual de conservarlos. Escríbenos a datos@ovanta.co; atendemos consultas en máximo 10 días hábiles y reclamos en 15 días hábiles.</p></details>
+      <details><summary>Tus derechos (Habeas Data)</summary><p>Puedes conocer, actualizar y rectificar tus datos; solicitar prueba de la autorización; ser informado del uso; presentar quejas ante la SIC; y revocar la autorización o solicitar la supresión cuando no exista deber legal o contractual de conservarlos. Escríbenos a datos@marenta.co; atendemos consultas en máximo 10 días hábiles y reclamos en 15 días hábiles.</p></details>
       <details id="cookies"><summary>Política de cookies</summary><p>Este sitio puede usar cookies y tecnologías similares para mejorar la navegación y obtener estadísticas de uso de forma agregada. Puedes configurar tu navegador para rechazarlas; algunas funciones podrían verse afectadas. Al continuar navegando, aceptas su uso conforme a esta política.</p></details>
       <details><summary>Seguridad y vigencia</summary><p>Adoptamos medidas técnicas, humanas y administrativas razonables para proteger tus datos. La política rige desde su publicación; los datos se conservan durante el tiempo necesario para las finalidades y las obligaciones legales aplicables.</p></details>
     </div>
@@ -496,8 +567,8 @@ footer a:hover{color:#EDE7D9}
   <div class="wrap">
     <div class="fgrid">
       <div>
-        <span class="brand"><svg viewBox="0 0 44 26" class="rings" aria-hidden="true" style="width:30px;height:18px"><circle cx="13" cy="13" r="11" stroke="#EDE7D9"/><circle cx="22" cy="13" r="11" stroke="#EDE7D9"/><circle cx="31" cy="13" r="11" stroke="#EDE7D9"/></svg>Ovanta</span>
-        <p style="max-width:36ch;margin-top:16px">Renting de activos productivos de alto valor, para cualquier sector. Accede a la tecnología sin comprar el capex.</p>
+        <span class="brand"><svg class="mark" viewBox="0 0 100 100" aria-hidden="true" style="width:30px;height:30px"><path d="M8 84 L28 14" stroke="#EDE7D9" stroke-width="13"/><path d="M72 14 L92 84" stroke="#EDE7D9" stroke-width="13"/><path d="M28 14 L50 54 L72 14" stroke="#d3a54c" stroke-width="13"/></svg>Marenta</span>
+        <p style="max-width:36ch;margin-top:16px">Renting de activos productivos de alto valor, para cualquier sector. Accede a la tecnología sin comprar el capex — o vende la tuya convirtiéndola en canon.</p>
         <div class="social">
           <a href="#" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#9fb8b5" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#9fb8b5"/></svg></a>
           <a href="#" aria-label="LinkedIn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#9fb8b5" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 014 0v4" stroke-linecap="round"/></svg></a>
@@ -513,9 +584,10 @@ footer a:hover{color:#EDE7D9}
       </div>
       <div>
         <h4>Empresa</h4>
+        <a href="#publicos">Clientes</a>
+        <a href="#aliados">Aliados</a>
         <a href="#nosotros">Nosotros</a>
         <a href="#numeros">El modelo</a>
-        <a href="#faq">Preguntas frecuentes</a>
         <a href="#contacto">Contacto</a>
       </div>
       <div>
@@ -531,7 +603,7 @@ footer a:hover{color:#EDE7D9}
       </div>
     </div>
     <div class="fbottom">
-      <span>© 2026 Ovanta S.A.S. · Marca en trámite ante la SIC. Datos de demostración.</span>
+      <span>© 2026 Marenta S.A.S. · Marca en trámite ante la SIC. Datos de demostración.</span>
       <span class="links"><a href="#privacidad">Privacidad</a><a href="#contacto">Contacto</a></span>
     </div>
   </div>
@@ -541,8 +613,8 @@ footer a:hover{color:#EDE7D9}
 (function(){
   var root=document.documentElement, tbtn=document.getElementById('theme');
   function cur(){return root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');}
-  try{var s=localStorage.getItem('ov-theme');if(s)root.setAttribute('data-theme',s);}catch(e){}
-  tbtn.addEventListener('click',function(){var n=cur()==='dark'?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('ov-theme',n);}catch(e){}});
+  try{var s=localStorage.getItem('mrnt-theme');if(s)root.setAttribute('data-theme',s);}catch(e){}
+  tbtn.addEventListener('click',function(){var n=cur()==='dark'?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('mrnt-theme',n);}catch(e){}});
   var drawer=document.getElementById('drawer'),burger=document.getElementById('burger'),closeB=document.getElementById('closeDrawer');
   function open(){drawer.classList.add('open');drawer.setAttribute('aria-hidden','false');burger.setAttribute('aria-expanded','true');}
   function close(){drawer.classList.remove('open');drawer.setAttribute('aria-hidden','true');burger.setAttribute('aria-expanded','false');}
@@ -551,3 +623,5 @@ footer a:hover{color:#EDE7D9}
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
 })();
 </script>
+</body>
+</html>
